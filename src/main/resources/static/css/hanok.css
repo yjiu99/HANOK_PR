@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* 서울한옥, 전체코스 페이지 */
+
+.place-list-tit {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.place-list-tit span {
+    font-size: var(--font-regular);
+    font-weight: 400;
+}
+
+.place-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.place-list>li {
+    width: calc(100% / 4);
+    padding: 0 24px 0 0;
+}
+
+.place-list>li:nth-child(4n) {
+    padding: 0 0 24px 0;
+}
+
+.place-bg-img {
+    border-radius: 12px;
+}
+
+.place-tag-nav {
+    position: fixed;
+    right: 7px;
+    bottom: 28px;
+}
+
+.place-tag-nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.place-tag-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 152px;
+    padding: 10px 0;
+    background: var(--color-shade01);
+    font-size: var(--font-regular);
+    border-radius: 100px;
+    box-shadow: 0px 2px 4px 0px rgba(52, 52, 52, 0.08);
+    cursor: pointer;
+}
+
+/* 전체 코스 */
+.custom-course-wrap {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 0 80px;
+    font-size: var(--font-x-large);
+    font-weight: 400;
+    color: var(--color-shade02);
+    text-align: center;
+    border-radius: 30px;
+    background: var(--color-shade01);
+    box-shadow: 0px 2px 4px 0px rgba(52, 52, 52, 0.08);
+    border: 1px solid var(--color-neutral04);
+}
+
+.custom-course-wrap>a {
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    margin: 0 0 22px;
+    cursor: pointer;
+}
+
+/* 직접 코스 만들기 팝업 */
+#customCoursePopupWrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: none;
+}
+
+.custom-course-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 637px;
+    padding: 48px;
+    background: var(--color-shade01);
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.custom-course-popup>svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.custom-course-popup .gear-wrap {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 36px;
+}
+
+.custom-course-popup em {
+    font-size: var(--font-xx-large);
+    font-weight: 800;
+}
+
+.custom-course-popup p {
+    font-size: var(--font-regular);
+    font-weight: 400;
+    color: #000;
+    margin: 12px 0 36px;
+}
+
+.custom-course-popup input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 19px 25px;
+    margin: 0 0 36px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.custom-course-popup input[type="text"]::placeholder {
+    color: #8E8E8E;
+    font-size: var(--font-regular);
+    font-weight: 800;
+    text-align: center;
+}
+
+.custom-course-popup input[type="submit"] {
+    padding: 19px 56px;
+    background: var(--color-shade01);
+    border-radius: 20px;
+    border: 1px solid #000;
+}

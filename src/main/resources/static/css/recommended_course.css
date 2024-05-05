@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* 추천코스 페이지 */
+
+.recommended-course-tit {
+    padding: 96px 0;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--color-shade02);
+    text-align: center;
+}
+
+.choose-course-btn-wrap {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.choose-course-btn-wrap>button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    width: 50%;
+    height: 601px;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--color-shade02);
+    background: var(--color-shade02-5);
+    border-radius: 20px;
+    border: 1px solid var(--color-neutral04);
+}
+
+.choose-course-second{
+    display: none;
+}
+
+.custom-course-btn-wrap {
+    margin: 56px 0;
+    float: right;
+    font-size: var(--font-xx-large);
+    font-weight: 400;
+    color: var(--color-shade02);
+}
+
+.custom-course-btn-wrap span {
+    margin-right: 24px;
+}
+.custom-course-btn-wrap .next-btn-wrap{
+    display: inline-block;
+    height: 36px;
+}
+
+/* 선택된 코스 */
+.selected-course-info {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 0 0 56px;
+    text-align: center;
+}
+
+.selected-course-info img {
+    width: 48px;
+    height: 48px;
+}
+
+.selected-course-info p {
+    font-size: var(--font-regular);
+    font-weight: 400;
+    color: var(--color-shade02);
+}
+
+.selected-course-info em {
+    font-size: var(--font-x-large);
+    font-weight: 800;
+    color: var(--color-shade02);
+}
+
+.selected-course .place-bg-img {
+    width: 100%;
+    height: 287px;
+    border-radius: 12px;
+}
+
+.selected-course-route {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.selected-course-route .place {
+    width: 25%;
+}
+
+.next-course-icon {
+    width: 48px;
+    height: 48px;
+}
